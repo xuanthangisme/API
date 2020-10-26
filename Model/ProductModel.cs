@@ -6,15 +6,15 @@ namespace Model
 {
     public class ProductModel
     {
-        public int Id_Product { get; set; }
-        public int Id_Menu { get; set; }
-        public string Name_Product { get; set; }
-        public string Code { get; set; }
-        public string Meta_Title { get; set; }
-        public string Images { get; set; }
-        public decimal? Listed_Price { get; set; }
-        public string Description { get; set; }
+        public int IDproduct { get; set; }
+        public int IDmenu{ get; set; }
+        public string NamePD { get; set; }
+        public string Size { get; set; }
+        public string IMG { get; set; }
+        public string Producer { get; set; }
         public string Note { get; set; }
-        public DateTime? CreatedDate { get; set; }
+        public string Price { get; set; }
+        public string Promotion_Price { get; set; }
+        public string Status { get; set; }
     }
 }
