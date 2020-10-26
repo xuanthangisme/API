@@ -7,6 +7,8 @@ namespace BLL
 {
     public partial interface IProductBusiness
     {
+        ProductModel GetProID(string id);
+        bool Create(ProductModel model);
         List<ProductModel> GetProAll();
     }
 }

@@ -18,5 +18,13 @@ namespace BLL
         {
             return _res.GetProAll();
         }
+        public bool Create(ProductModel model)
+        {
+            return _res.Create(model);
+        }
+        public ProductModel GetProID(string id)
+        {
+            return _res.GetProID(id);
+        }
     }
 }
