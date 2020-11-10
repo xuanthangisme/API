@@ -43,11 +43,23 @@ namespace API.Controllers
             _proBusiness.Create(model);
             return model;
         }
-        [Route("get-pro-id/{id}")]
+        [Route("get-pro-id/{IDproduct}")]
         [HttpGet]
-        public ProductModel GetProID(string id)
+        public ProductModel GetProID( int IDproduct)
         {
-            return _proBusiness.GetProID(id);
+            return _proBusiness.GetProID(IDproduct);
+        }
+        [Route("get-5-menu-pro/{IDmenu}")]
+        [HttpGet]
+        public IEnumerable<ProductModel> Get5MenuProAll(int IDmenu)
+        {
+            return _proBusiness.Get5MenuProAll(IDmenu);
+        }
+        [Route("get-all-menu-pro/{IDmenu}")]
+        [HttpGet]
+        public IEnumerable<ProductModel> GetMenuProAll( int IDmenu)
+        {
+            return _proBusiness.GetMenuProAll(IDmenu);
         }
     }
 }

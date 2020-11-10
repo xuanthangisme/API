@@ -68,6 +68,8 @@ namespace API
             services.AddControllers();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IProductBusiness, ProductBusiness>();
+            services.AddTransient<IMenuRepository, MenuRepository>();
+            services.AddTransient<IMenuBusiness, MenuBusiness>();
             services.AddTransient<IDatabaseHelper, DatabaseHelper>();
             services.AddTransient<IItemGroupRepository, ItemGroupRepository>();
             services.AddTransient<IItemGroupBusiness, ItemGroupBusiness>();

@@ -22,9 +22,17 @@ namespace BLL
         {
             return _res.Create(model);
         }
-        public ProductModel GetProID(string id)
+        public ProductModel GetProID(int IDproduct)
         {
-            return _res.GetProID(id);
+            return _res.GetProID(IDproduct);
+        }
+        public List<ProductModel> Get5MenuProAll(int IDmenu)
+        {
+            return _res.Get5MenuProAll(IDmenu);
+        }
+        public List<ProductModel> GetMenuProAll(int IDmenu)
+        {
+            return _res.GetMenuProAll(IDmenu);
         }
     }
 }
